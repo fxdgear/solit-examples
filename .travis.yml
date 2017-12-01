@@ -14,5 +14,12 @@ before_install:
   - docker ps -a
   - pip install solit==0.3
 
-script:
-  - solit --debug=true
+jobs:
+  include:
+    - stage: parallel_tests
+      script: solit --testname test_0001
+    - # stage name not required, will continue to use `parallel_test`
+      script: solit --testname test_0002
+
+# script:
+#  - solit --debug=true
