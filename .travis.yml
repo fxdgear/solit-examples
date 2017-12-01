@@ -15,4 +15,4 @@ before_install:
   - pip install solit
 
 script:
-  - solit
+  - solit --debug=true
