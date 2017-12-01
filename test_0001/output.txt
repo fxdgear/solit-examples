@@ -1,7 +1,7 @@
 {
   "hits" : [
     {
-        "logLevel" : "DEBUGaa",
+        "logLevel" : "DEBUG",
         "logMessage" : "Created Used reservation for 85b7510a-076d-4c76-807a-d195dc8d41fe@example.com to Maku at 8/24/2017 1:49:28 PM -04:00 entering without a reservation. The reservation was for 8/24/2017 1:49:00 PM -04:00 with reservation index   ",
         "operationId" : "Loq.Qsmart.Server.Model.Session",
         "type" : "test_0001",

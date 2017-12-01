@@ -6,3 +6,11 @@ test_0001:
   output_conf: logstash/conf.d/output.conf
   config: logstash/logstash.yml
   template: elasticsearch/templates/template_name.json
+test_0002:
+  input: test_0002/input.log
+  output: test_0002/output.txt
+  query: test_0002/query.json
+  pipeline: logstash/conf.d/test_0001/filter.conf
+  output_conf: logstash/conf.d/output.conf
+  config: logstash/logstash.yml
+  template: elasticsearch/templates/template_name.json
